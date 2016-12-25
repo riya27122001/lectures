@@ -1,0 +1,61 @@
+<!-- <header class="hero-unit" id="banner">
+  <div class="container">
+    <h1>'Allo, 'Allo!</h1>
+    <p class="lead">Kick-start your next web app with Angular Fullstack</p>
+    <img src="assets/images/yeoman.png" alt="I'm Yeoman">
+  </div>
+</header>
+
+<div class="container">
+  <div class="row">
+    <div class="col-lg-12">
+      <h1 class="page-header">Features:</h1>
+      <ul class="nav nav-tabs nav-stacked col-md-4 col-lg-4 col-sm-6" ng-repeat="thing in $ctrl.awesomeThings">
+        <li><a href="#" uib-tooltip="{{thing.info}}">{{thing.name}}<button type="button" class="close" ng-click="$ctrl.deleteThing(thing)">&times;</button></a></li>
+      </ul>
+    </div>
+  </div>
+
+  <form class="thing-form">
+    <label>Syncs in realtime across clients</label>
+    <p class="input-group">
+      <input type="text" class="form-control" placeholder="Add a new thing here." ng-model="$ctrl.newThing">
+      <span class="input-group-btn">
+        <button type="submit" class="btn btn-primary" ng-click="$ctrl.addThing()">Add New</button>
+      </span>
+    </p>
+  </form>
+</div> -->
+<link href="http://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+
+  <div class="row" style="margin-left: 0%; margin-right: 0%; padding-right: 0%;">
+    <div class="col-sm-12">
+        <h1>Shaastra Spotlight</h1>
+    </div>
+      <!-- Middle container -->
+    <div style="padding-top: 12%; position: absolute; top: 0; z-index: 100; width: 100%;" class="container-fluid bg-2 text-center col-xs-12">
+        <h3>Welcome to Shaastra Spotlight  Lectures!</h3>
+        <p>Sign-up or login below</p> 
+    </div>
+    
+    <div class="container-fluid bg-3 text-left" ng-app='libraryApp' style="position: absolute; left: 40%; top: 50%;">
+      <a ng-hide="$ctrl.isLoggedIn()" ui-sref="signup" href="/signup">
+        <button type="button" class="btn btn-success btn-lg">
+           <span class="glyphicon glyphicon-plus"></span>
+            Sign up
+        </button>
+      </a>
+      <a ng-hide="$ctrl.isLoggedIn()" ui-sref="login" href="/login">
+        <button type="button" class="btn btn-primary btn-lg">
+           <span class="glyphicon glyphicon-ok"></span>
+            Login
+        </button>
+      </a>
+      <a ng-show="$ctrl.isLoggedIn()" ui-sref="logout" href="/logout">
+        <button type="button" class="btn btn-primary btn-lg">
+           <span class="glyphicon glyphicon-minus"></span>
+            Logout
+        </button>
+      </a>
+    </div>
+  </div> 

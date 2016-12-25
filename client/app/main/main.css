@@ -1,0 +1,69 @@
+.thing-form {
+  margin: 20px 0;
+}
+
+#banner {
+  border-bottom: none;
+  margin-top: -20px;
+}
+
+#banner h1 {
+  font-size: 60px;
+  line-height: 1;
+  letter-spacing: -1px;
+}
+
+.hero-unit {
+  position: relative;
+  padding: 30px 15px;
+  color: #F5F5F5;
+  text-align: center;
+  text-shadow: 0 1px 0 rgba(0, 0, 0, 0.1);
+  background: #4393B9;
+}
+
+.navbar-text {
+  margin-left: 15px;
+}
+
+
+/*Body Formatting*/
+    body {
+        
+        line-height: 2.8;
+        color: #25262A;
+    }
+  /*Background and font color for middle container*/  
+    .bg-2 { 
+        font: 22px "Montserrat", sans-serif;
+        background-color: #474e5d; /* Dark Blue */
+        color: #ffffff;
+    }
+  /*Background and font color for form*/  
+    .bg-3 { 
+        background-color: #ffffff; /* White */
+        color: #555555;
+    }
+  /*Padding for middle container*/  
+    .container-fluid {
+        padding-top: 70px;
+        padding-bottom: 70px;
+    }
+  /*Margin for form*/ 
+    form {
+      font: 22px "Montserrat", sans-serif;
+      margin-left: 10%;
+      margin-right: 30%;
+
+    }
+  /*Formatting for top error alert after clicking submit*/  
+    .error {
+      margin-left: 10%;
+      margin-right: 10%;
+      margin-top: 2%;
+
+    }
+  /*Changing border color of input box*/  
+    .red{
+      border-color: red;
+    }
