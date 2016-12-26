@@ -1,5 +1,5 @@
 'use strict';
-
+var flg=0;
 
 
 class SignupController {
@@ -32,12 +32,15 @@ class SignupController {
         .catch(err => {
           err = err.data;
           this.errors = {};
-          this.message = 'Sorry! Your MAC address is already in use.';
+          
           // Update validity of form fields that match the mongoose errors
           angular.forEach(err.errors, (error, field) => {
+            flg=1;
             form[field].$setValidity('mongoose', false);
             this.errors[field] = error.message;
           });
+          if(flg!=1)
+            this.message = 'Sorry! Your MAC address is already in use.';
         });
     }
   }
