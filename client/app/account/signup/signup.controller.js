@@ -27,11 +27,12 @@ class SignupController {
         .then(() => {
           // Account created, redirect to home
           this.$location.path('/');
+          this.message = 'Successfully signed up.';
         })
         .catch(err => {
           err = err.data;
           this.errors = {};
-
+          this.message = 'Sorry! Your MAC address is already in use.';
           // Update validity of form fields that match the mongoose errors
           angular.forEach(err.errors, (error, field) => {
             form[field].$setValidity('mongoose', false);
